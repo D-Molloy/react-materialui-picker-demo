@@ -10,7 +10,6 @@ import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
 
 
-export default App;
 ReactDOM.render(
   <MuiPickersUtilsProvider utils={DateFnsUtils}>
     <App />
