@@ -3,11 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import MomentUtils from '@date-io/moment';
+import DateFnsUtils from '@date-io/date-fns';
+// import LuxonUtils from '@date-io/luxon';
+import { MuiPickersUtilsProvider } from '@material-ui/pickers';
 
+
+
+export default App;
 ReactDOM.render(
-  <React.StrictMode>
+  <MuiPickersUtilsProvider utils={DateFnsUtils}>
     <App />
-  </React.StrictMode>,
+  </MuiPickersUtilsProvider>,
   document.getElementById('root')
 );
 
